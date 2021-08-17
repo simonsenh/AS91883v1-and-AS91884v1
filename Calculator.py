@@ -31,17 +31,17 @@ Beta:
 
 Gamma:
 Delta:
-main_equations=(“trigonometry_(1)”,“pythagoras_(2)”,“Quadratic_(3)”,power_functions_(4),“+,-,*,/_(5)”)
-trig_equations=(“sin(a)_(1)”,“sin-1(a)_(2)”,“cos(a)_(3)”,“cos(a)-1_(4)”,“tan(a)_(5)”,“tan(a)_(6)”)
-pythagoras_equations= (“a2+b2_(1)”,“a2-b2_(2)”)
-power_equations= (“√a_(1)”,“a2_(2)”,“a√b_(3)”,“ab_(4)”)
-function_equations = (“a+b_(1)”,“a-b_(2)”,“a*b_(3)”,“a/b_(4)”)
-number_list_main = (“1”,“2”,“3”,“4”,“5”)
-number_list_trig = (“1”,“2”,“3”,“4”,“5”,“6”)
-number_list _pythagoras= (“1”,“2”)
-number_list_power = (“1”,“2”,“3”,“4”)
-number_list_function = (“1”,“2”,“3”,“4”)
-OUTPUT(Main_Equations)
+main_equations = ("trigonometry_(1)","pythagoras_(2)","Quadratic_(3)","power_functions_(4)","+,-,*,/_(5)")
+trig_equations = ("sin(a)_(1)","sin-1(a)_(2)","cos(a)_(3)","cos(a)-1_(4)","tan(a)_(5)","tan(a)_(6)")
+pythagoras_equations = ("a2+b2_(1)","a2-b2_(2)")
+power_equations = ("√a_(1)","a2_(2)","a√b_(3)","ab_(4)")
+function_equations = ("a+b_(1)","a-b_(2)","a*b_(3)","a/b_(4)")
+number_list_main = ("1","2","3","4","5")
+number_list_trig = ("1","2","3","4","5","6")
+number_list_pythagoras = ("1","2")
+number_list_power = ("1","2","3","4")
+number_list_function = ("1","2","3","4")
+print(main_equations)
 Try:
    equation_set = INPUT(“What equation set?(input number in bracket)”)
    IF equation_set in number_list_main:
@@ -98,5 +98,5 @@ Try:
             IF equation = 4
               OUTPUT(“a/b”)
 
-Except ValueError:
-   OUTPUT(“Syntax error”)
+except value error
+   print(“Syntax error”)
