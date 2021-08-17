@@ -26,11 +26,14 @@ def inputs(input):
                 return alpha + beta + delta + gamma
 
 def alpha(output):
-   round()
-Beta:
+   round(output)
+def beta(output):
 
-Gamma:
-Delta:
+def gamma(output):
+
+def delta(output):
+
+
 main_equations = ("trigonometry_(1)","pythagoras_(2)","Quadratic_(3)","power_functions_(4)","+,-,*,/_(5)")
 trig_equations = ("sin(a)_(1)","sin-1(a)_(2)","cos(a)_(3)","cos(a)-1_(4)","tan(a)_(5)","tan(a)_(6)")
 pythagoras_equations = ("a2+b2_(1)","a2-b2_(2)")
@@ -96,5 +99,5 @@ try:
             elif equation == 4:
               print("a/b")
 
-except_ValueError:
+except ValueError:
   print("Syntax error")
