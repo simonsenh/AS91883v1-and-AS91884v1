@@ -5,11 +5,11 @@ import random
 
 def inputs(input):
     alpha = input("What is a?(input number)")
-    if inputs > 1:
+    if input > 1:
         beta = input("What is b?(input number)")
-        if inputs > 2:
+        if input > 2:
             delta = input("What is c?(input number)")
-            if inputs > 3:
+            if input > 3:
                 gamma = input("What is d?(input number)")
                 alpha = alpha * 1000000000000000
                 beta = beta * 1000000000
@@ -41,58 +41,58 @@ number_list_power = ("1","2","3","4")
 number_list_function = ("1","2","3","4")
 print(main_equations)
 try:
-   equation_set = int(input("What equation set?(input number in bracket)"))
+   equation_set = input("What equation set?(input number in bracket)")
    if equation_set in number_list_main:
-      if equation_set == 1:
+      if equation_set == "1":
          print(trig_equations)
          equation = input("What equation?(input number in bracket)")
          if equation in number_list_trig:
-            if equation == 1:
+            if equation == "1":
                 print("sin(a)")
-            if equation == 2:
+            elif equation == "2":
                 print("sin-1(a)")
-            if equation == 3:
+            elif equation == "3":
                 print("cos(a)")
-            if equation == 4:
+            elif equation == "4":
                 print("cos(a)-1")
-            if equation == 5:
+            elif equation == "5":
                 print("tan(a)")
-            if equation == 6:
+            elif equation == "6":
                 print("tan(a)-1")
-      elif equation_set == 2:
+      elif equation_set == "2":
          print(pythagoras_equations)
          equation = input("What equation?(input number in bracket)")
          if equation in number_list_pythagoras:
-            if equation == 1:
-               print("a2 + b2")
-            if equation == 2:
-               print("a2 - b2")
-      elif equation_set == 3:
+            if equation == "1":
+                print("a2 + b2")
+            elif equation == "2":
+                print("a2 - b2")
+      elif equation_set == "3":
          print("(−b ± √(b2 − 4ac))/2a")
-      elif equation_set == 4:
+      elif equation_set == "4":
          print(power_equations)
          equation = input("What equation?(input number in bracket)")
          if equation in number_list_power:
-            if equation == 1:
+            if equation == "1":
                print("√a")
-            if equation == 2:
-              print("a2")
-            if equation == 3:
-              print("a√b")
-            if equation == 4:
-              print("ab")
-      elif equation_set == 5:
+            elif equation == "2":
+               print("a2")
+            elif equation == "3":
+               print("a√b")
+            elif equation == "4":
+               print("ab")
+      elif equation_set == "5":
          print(function_equations)
          equation = input("What equation?(input number in bracket)")
          if equation in number_list_function:
-            if equation == 1:
-              print("a+b")
-            elif equation == 2:
-              print("a-b")
-            elif equation == 3:
-              print("a*b")
-            elif equation == 4:
-              print("a/b")
+            if equation == "1":
+               print("a+b")
+            elif equation == "2":
+               print("a-b")
+            elif equation == "3":
+               print("a*b")
+            elif equation == "4":
+               print("a/b")
 
 except ValueError:
   print("Syntax error")
