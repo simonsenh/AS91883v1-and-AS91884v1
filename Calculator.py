@@ -1,16 +1,7 @@
 import math
 import random
 
-print("y")
 
-x = 2
-
-def math(x):
-    return x + 3
-
-print(math(x))
-
-input = 1
 
 def inputs(input):
     alpha = input("What is a?(input number)")
@@ -26,14 +17,18 @@ def inputs(input):
                 return alpha + beta + delta + gamma
 
 def alpha(output):
-   round(output)
+   round(output, -2)
+
 def beta(output):
+    round(output, -2)
 
 def gamma(output):
+    round(output, -2)
 
 def delta(output):
+    round(output, -2)
 
-
+letters = 1
 main_equations = ("trigonometry_(1)","pythagoras_(2)","Quadratic_(3)","power_functions_(4)","+,-,*,/_(5)")
 trig_equations = ("sin(a)_(1)","sin-1(a)_(2)","cos(a)_(3)","cos(a)-1_(4)","tan(a)_(5)","tan(a)_(6)")
 pythagoras_equations = ("a2+b2_(1)","a2-b2_(2)")
@@ -46,7 +41,7 @@ number_list_power = ("1","2","3","4")
 number_list_function = ("1","2","3","4")
 print(main_equations)
 try:
-   equation_set = input("What equation set?(input number in bracket)")
+   equation_set = int(input("What equation set?(input number in bracket)"))
    if equation_set in number_list_main:
       if equation_set == 1:
          print(trig_equations)
