@@ -42,61 +42,59 @@ number_list_pythagoras = ("1","2")
 number_list_power = ("1","2","3","4")
 number_list_function = ("1","2","3","4")
 print(main_equations)
-Try:
-   equation_set = INPUT(“What equation set?(input number in bracket)”)
-   IF equation_set in number_list_main:
-      IF equation_set = 1
-         OUTPUT(trig_equations)
-         equation = INPUT(“What equation?(input number in bracket)”)
-         IF equation in number_list_trig:
-            IF equation = 1
-               OUTPUT(“sin(a)”)
-            IF equation = 2
-              OUTPUT(“sin-1(a)”)
-            IF equation = 3
-              OUTPUT(“cos(a)”)
-           IF equation = 4
-              OUTPUT(“cos(a)-1”)
-           IF equation = 5
-              OUTPUT”(tan(a)”)
-           IF equation = 5
-               OUTPUT”(tan(a)”)
-           IF equation = 6
-              OUTPUT”(tan(a)-1”)
-     IF equation_set = 2
-         OUTPUT(pythagoras_equations)
-         equation = INPUT(“What equation?(input number in bracket)”)
-         IF equation in number_list_pythagoras:
-            IF equation = 1
-               OUTPUT(“a2+b2”)
-            IF equation = 2
-              OUTPUT(“a2-b2”)
-     IF equation_set = 3
-         OUTPUT(“−b ± √(b2 − 4ac)/2a”)
-     IF equation_set = 4
-         OUTPUT(power_equations)
-         equation = INPUT(“What equation?(input number in bracket)”)
-         IF equation in number_list_power:
-            IF equation = 1
-               OUTPUT(“√a”)
-            IF equation = 2
-              OUTPUT(“a2”)
-            IF equation = 3
-              OUTPUT(“a√b”)
-            IF equation = 4
-              OUTPUT(“ab”)
-     IF equation_set = 5
-         OUTPUT(function_equations)
-         equation = INPUT(“What equation?(input number in bracket)”)
-         IF equation in number_list_function:
-            IF equation = 1
-               OUTPUT(“a+b”)
-            IF equation = 2
-              OUTPUT(“a-b”)
-            IF equation = 3
-              OUTPUT(“a*b”)
-            IF equation = 4
-              OUTPUT(“a/b”)
+try:
+   equation_set = input("What equation set?(input number in bracket)")
+   if equation_set in number_list_main:
+      if equation_set == 1:
+         print(trig_equations)
+         equation = input("What equation?(input number in bracket)")
+         if equation in number_list_trig:
+            if equation == 1:
+                print("sin(a)")
+            if equation == 2:
+                print("sin-1(a)")
+            if equation == 3:
+                print("cos(a)")
+            if equation == 4:
+                print("cos(a)-1")
+            if equation == 5:
+                print("tan(a)")
+            if equation == 6:
+                print("tan(a)-1")
+      elif equation_set == 2:
+         print(pythagoras_equations)
+         equation = input("What equation?(input number in bracket)")
+         if equation in number_list_pythagoras:
+            if equation == 1:
+               print("a2 + b2")
+            if equation == 2:
+               print("a2 - b2")
+      elif equation_set == 3:
+         print("(−b ± √(b2 − 4ac))/2a")
+      elif equation_set == 4:
+         print(power_equations)
+         equation = input("What equation?(input number in bracket)")
+         if equation in number_list_power:
+            if equation == 1:
+               print("√a")
+            if equation == 2:
+              print("a2")
+            if equation == 3:
+              print("a√b")
+            if equation == 4:
+              print("ab")
+      elif equation_set == 5:
+         print(function_equations)
+         equation = input("What equation?(input number in bracket)")
+         if equation in number_list_function:
+            if equation == 1:
+              print("a+b")
+            elif equation == 2:
+              print("a-b")
+            elif equation == 3:
+              print("a*b")
+            elif equation == 4:
+              print("a/b")
 
-except value error
-   print(“Syntax error”)
+except_ValueError:
+  print("Syntax error")
